@@ -1,0 +1,11 @@
+{
+    "translation": {
+        "welcome": "Willkommen beim Festival",
+        "tagline": "Das größte Event des Sommers",
+        "nav": {
+            "home": "Startseite",
+            "lineup": "Lineup",
+            "tickets": "Tickets"
+        }
+    }
+}
