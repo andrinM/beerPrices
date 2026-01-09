@@ -25,6 +25,12 @@ INSERT INTO bars (name, latitude, longitude, logo_path ) VALUES
 ('Tuchlaube Cafe Bar', 47.39392421638161, 8.04371665564907, 'tuchlaube.svg'),
 ('Mad Cat', 47.39300290375433, 8.042796837604294, 'madcat.svg');
 
+CREATE TABLE IF NOT EXISTS images (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    public_id VARCHAR(255) NOT NULL,
+    title VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
 
 -- Users
 CREATE TABLE IF NOT EXISTS users (

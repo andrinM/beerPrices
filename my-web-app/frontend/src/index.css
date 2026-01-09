@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;700&display=swap');
 
+/* CSS Reset - Prevent padding/border from causing overflow */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -12,11 +19,12 @@
 
   --primary: #ffedb3;
   --secondary: #6d4ce5;
-  --tertiary: #000000;
+  --tertiary: #FFFFFF;
+  --quaternary: #34c2c2ff;
 
-  --bg-color: var(--primary);
-  --color-h1: var(--secondary);
-  --color-h2: var(--secondary);
+  --bg-color: var(--secondary);
+  --color-h1: var(--primary);
+  --color-h2: var(--primary);
 
   --color-text: var(--tertiary);
   --font-display: 'Bebas Neue', sans-serif;
@@ -24,8 +32,10 @@
 }
 
 body {
+  margin: 0;
+  padding: 0;
   font-family: var(--font-body);
-  background-color: var(--bg-color);
+  background: linear-gradient(180deg, rgba(52, 194, 194, 1), rgba(109, 76, 229, 1), rgba(255, 237, 179, 1));
   color: var(--color-text);
 }
 

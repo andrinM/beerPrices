@@ -1,4 +1,6 @@
 import { useTranslation } from 'react-i18next';
+import ImageUpload from '../components/Layout/ImageUpload';
+import ImageGrid from '../components/Layout/ImageGrid';
 
 function Home() {
     const { t } = useTranslation();
@@ -6,7 +8,8 @@ function Home() {
         <div className="py-5 text-center">
             <h1>{t('welcome')}</h1>
             <p className="lead">{t('tagline')}</p>
-            {/* You can add a Hero image or a Countdown timer here later */}
+            <ImageUpload />
+            <ImageGrid />
         </div>
     );
 }
