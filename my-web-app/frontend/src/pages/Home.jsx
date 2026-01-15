@@ -9,7 +9,11 @@ function Home() {
     return (
         <div className="py-5 text-center">
             <Container>
-                <h1>{t('welcome')}</h1>
+                <h1>{t('welcome1')}</h1>
+                <h2>{t('welcome2')}</h2>
+                <h3>{t('welcome3')}</h3>
+                <h4>{t('welcome4')}</h4>
+                <h5>{t('welcome5')}</h5>
                 <p className="lead">{t('tagline')}</p>
                 {/* <ImageUpload />
             <ImageGrid /> */}
