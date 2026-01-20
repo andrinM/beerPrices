@@ -6,6 +6,8 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import './index.css'
 import './infoDropdown.css'
 import './buttons.css'
+import './header.css'
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

@@ -67,7 +67,7 @@ function App() {
       <Header ref={headerRef} navbarOpen={navbarOpen} setNavbarOpen={setNavbarOpen} isVisible={isVisible} />
 
       <MenuOverlay navbarOpen={navbarOpen} setNavbarOpen={setNavbarOpen} topOffset={headerHeight} />
-      <main style={{ display: navbarOpen ? 'none' : 'block', paddingTop: `${headerHeight}px` }}>
+      <main style={{ display: navbarOpen ? 'none' : 'block', paddingTop: `calc(${headerHeight}px + var(--extra-gap-header))` }}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/archive" element={<Archive />} />

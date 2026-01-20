@@ -12,25 +12,30 @@
 
   --primary: #ffedb3;
   --secondary: #6d4ce5;
-  --tertiary: #000000;
-  --quaternary: #34c2c2ff;
+  --tertiary: #34c2c2ff;
+  --black: #000000;
+  --white: #FFFFFF;
 
-  --bg-color: var(--secondary);
-  --color-h1: var(--primary);
-  --color-h2: var(--primary);
-  --color-text: var(--tertiary);
+  --bg-color: var(--primary);
+  --color-h1: var(--black);
+  --color-h2: var(--black);
+  --color-text: var(--black);
 
   --font-heading: 'Bebas Neue', sans-serif;
   --font-body: 'Inter', sans-serif;
 
-
+  /*min, prefered, max*/
   --h1-font-size: clamp(5rem, 15vw, 12rem);
   --h2-font-size: clamp(4.5rem, 12vw, 10rem);
   --h3-font-size: clamp(3.5rem, 10vw, 8rem);
   --h4-font-size: clamp(3rem, 8vw, 6rem);
   --h5-font-size: clamp(2.2rem, 6vw, 4rem);
 
+  --header-line-height: 0;
+
   --font-text-size: 2rem;
+
+  --extra-gap-header: clamp(4rem, 10vw, 12rem);
 }
 
 .bg-primary {
@@ -64,81 +69,32 @@ h3,
 h4,
 h5 {
   font-family: var(--font-heading);
+  line-height: var(--header-line-height);
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
   font-size: var(--h1-font-size);
-  line-height: 0.9;
 }
 
 h2 {
   font-size: var(--h2-font-size);
-  line-height: 0.9;
 }
 
 h3 {
   font-size: var(--h3-font-size);
-  line-height: 1;
 }
 
 h4 {
   font-size: var(--h4-font-size);
-  line-height: 1;
 }
 
 h5 {
   font-size: var(--h5-font-size);
-  line-height: 1.1;
 }
 
 .lead {
   font-weight: 600;
   font-size: var(--font-size-lead);
-}
-
-.navbar.fixed-top,
-.navbar {
-  /* Force it to stay relative to the BROWSER WINDOW */
-  position: fixed !important;
-  top: 0 !important;
-  left: 0 !important;
-  right: 0 !important;
-  width: 100% !important;
-
-  /* Lift it out of any parent containers that might be clipping it */
-  z-index: 9999 !important;
-
-  /* Smooth animation */
-  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
-}
-
-.header-hidden {
-  /* Use a slightly larger percentage to ensure shadows/borders are hidden too */
-  transform: translateY(-105%) !important;
-}
-
-.header-visible {
-  /* This moves it back to the very top of the VIEWPORT, not the document */
-  transform: translateY(0) !important;
-}
-
-.overlay-menu {
-  position: absolute;
-  display: flex;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 0 1rem 0 1rem;
-  min-height: 100vh;
-  z-index: 1;
-  background-color: var(--secondary);
-  overflow: visible;
-
-}
-
-.nav-link {
-  font-family: var(--font-display);
-  font-size: 4rem;
-  color: var(--quaternary);
-  --bs-nav-link-hover-color: var(--primary);
 }

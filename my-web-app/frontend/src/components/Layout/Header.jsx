@@ -13,7 +13,7 @@ const Header = forwardRef(({ navbarOpen, setNavbarOpen, isVisible }, ref) => {
 
     return (
         <>
-            <Navbar ref={ref} className={`w-full top-0 left-0 flex z-2 ${isVisible ? "header-visible" : "header-hidden"} ${navbarOpen ? "bg-secondary" : "bg-primary"}`}>
+            <Navbar ref={ref} className={`mb-5 w-full top-0 left-0 flex z-2 ${isVisible ? "header-visible" : "header-hidden"} ${navbarOpen ? "bg-secondary" : "bg-primary"}`}>
                 <Container className="d-flex flex-column align-items-center" style={{ maxWidth: '1000px' }}>
                     <Button onClick={() => setNavbarOpen(!navbarOpen)} className="align-self-end mb-5">
                         Icon will go here
